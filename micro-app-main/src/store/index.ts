@@ -7,14 +7,17 @@ export default new Vuex.Store({
   state: {
     token: ''
   },
-  getters: {},
+  getters: {
+    info: state => state,
+  },
   mutations: {
     SET_TOKEN (state, data) {
+      state.token = data;
       console.log('state', state, data);
     }
   },
   actions: {
-    SET_TOKEN_Async ({ commit, state }, data) {
+    SET_TOKEN_ASYNC ({ commit, state }, data) {
       commit('SET_TOKEN', data)
     }
   },

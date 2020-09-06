@@ -1,3 +1,5 @@
+import shared from "@/shared";
+
 const apps = [
   /**
    * name: 微应用名称 - 具有唯一性
@@ -10,18 +12,14 @@ const apps = [
     entry: '//localhost:10000',
     container: '#frame',
     activeRule: '/appOne',
-    props: {
-      msg: 'propsMsg',
-    },
+    props: { shared },
   },
   {
     name: 'micro-app-two',
     entry: '//localhost:10100',
     container: '#frame',
     activeRule: '/appTwo',
-    props: {
-      msg: 'propsMsg',
-    },
+    props: { shared },
   },
 ];
 

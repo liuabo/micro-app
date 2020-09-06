@@ -68,6 +68,12 @@ export default class MainMenu extends Vue {
           path: '/appOne/list',
           children: [],
         },
+        {
+          key: 'login',
+          title: 'Vue 子应用-01-登录',
+          path: '/appOne/communication',
+          children: [],
+        },
       ],
     },
     {
