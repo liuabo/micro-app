@@ -1,0 +1,22 @@
+{
+  "name": "micro-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/liuabo/micro-app.git",
+  "author": "liubo <liuabo116@163.com>",
+  "license": "liuabo",
+  "dependencies": {},
+  "scripts": {
+    "examples:install": "npm-run-all --serial install:*",
+    "examples:start": "npm-run-all --parallel start:*",
+    "install:main": "cd micro-app-main && yarn",
+    "start:main": "cd micro-app-main && yarn serve",
+    "install:micro-app-one": "cd micro-app-one && yarn",
+    "start:micro-app-one": "cd micro-app-one && yarn serve",
+    "install:micro-app-two": "cd micro-app-two && yarn",
+    "start:micro-app-two": "cd micro-app-two && yarn serve"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
